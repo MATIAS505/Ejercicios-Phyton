@@ -1,1 +1,1 @@
-hola mundo 10:50
+print ("hola mundo 10:50")
