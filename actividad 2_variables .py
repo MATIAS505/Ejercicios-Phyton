@@ -94,3 +94,5 @@ print("Usuario:", nombre_usuario, apellido_usuario, pais_usuario, edad_usuario)
 
 # 17 help('keywords')
 
+import keyword
+#print(keyword.kwlist)
