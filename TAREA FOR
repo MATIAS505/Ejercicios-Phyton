@@ -1,0 +1,72 @@
+#TAREA FOR, IN
+ 
+#1
+ 
+notas = [8.5, 6.0, 9.0, 7.0, 5.5]
+suma_total = 0
+aprobados = 0
+reprobados = 0
+ 
+for nota in notas:
+    suma_total = suma_total + nota  
+    if nota >= 7:
+        aprobados = aprobados + 1
+    else:
+        reprobados = reprobados + 1
+promedio = suma_total / 5  
+print("Suma total de notas:",suma_total)
+print(" Promedio del curso: ",promedio)
+print("Estudiantes aprobados:",aprobados)
+print("Estudiantes reprobados: ",reprobados)
+ 
+#2
+ 
+contrasena = "Python2026".lower()
+ 
+letras = 0
+numeros = 0
+o = 0
+ 
+for caracter in contrasena:
+    if caracter >= "a" and caracter <= "z":
+        letras = letras + 1
+    else:
+        numeros = numeros + 1
+    if caracter == "o":
+        o = o + 1
+print("Cantidad de letras:", letras)
+print("Cantidad de numeros:", numeros)
+print("Cantidad de veces que aparece o:", o)
+ 
+#3
+ 
+productos = {"teclado", "mouse", "monitor", "mouse", "impresora"}
+cantidad = 0
+mas_6 = 0
+for producto in productos:
+    cantidad = cantidad + 1
+    if len(producto) > 6:
+        mas_6 = mas_6 + 1
+print("Productos unicos:", cantidad)
+print("Productos con mas de 6 letras:", mas_6)
+ 
+#4
+ 
+correo = str(input("Ingrese su correo: "))
+usuario = ""
+for letra in correo:
+    if letra == "@":
+        break
+    usuario = usuario + letra
+print("El usuario es:", usuario)
+ 
+#5
+ 
+telefono = str(input("Ingrese su telefono: "))
+limpio = ""
+for caracter in telefono:
+    if caracter == " " or caracter == "-":
+        continue
+    limpio = limpio + caracter
+print("Telefono limpio:", limpio)
+ 
